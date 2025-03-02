@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Advisor Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row header">
+            <div class="col-12 text-center">
+                <h1>Cocktail Advisor Chat</h1>
+                <p>Ask questions about cocktails, get recommendations, and share your preferences!</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <!-- Sidebar with user preferences -->
+            <div class="col-md-3 sidebar">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Your Preferences</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6>Favorite Ingredients</h6>
+                        <ul id="favorite-ingredients" class="list-group">
+                            <li class="list-group-item text-muted">No favorite ingredients yet</li>
+                        </ul>
+                        
+                        <h6 class="mt-3">Favorite Cocktails</h6>
+                        <ul id="favorite-cocktails" class="list-group">
+                            <li class="list-group-item text-muted">No favorite cocktails yet</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h5>Example Questions</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group example-questions">
+                            <li class="list-group-item example-question">What are the 5 cocktails containing lemon?</li>
+                            <li class="list-group-item example-question">What are the 5 non-alcoholic cocktails containing sugar?</li>
+                            <li class="list-group-item example-question">What are my favourite ingredients?</li>
+                            <li class="list-group-item example-question">Recommend 5 cocktails that contain my favourite ingredients</li>
+                            <li class="list-group-item example-question">Recommend a cocktail similar to "Hot Creamy Bush"</li>
+                            <li class="list-group-item example-question">I love rum, mint, and lime. What can you recommend?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chat interface -->
+            <div class="col-md-9">
+                <div class="chat-container">
+                    <div id="chat-messages" class="chat-messages"></div>
+                    
+                    <div class="chat-input-container">
+                        <form id="chat-form">
+                            <div class="input-group">
+                                <input type="text" id="user-input" class="form-control" placeholder="Ask something about cocktails...">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', path='/js/chat.js') }}"></script>
+</body>
+</html>

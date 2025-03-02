@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-03-01T19:34:04.398976",
+  "api_key_prefix": "sk-p...",
+  "test_results": {
+    "api_info": {
+      "success": true
+    },
+    "simple_completion": {
+      "success": true
+    },
+    "rate_limits": {
+      "success": true
+    }
+  }
+}

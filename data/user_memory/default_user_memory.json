@@ -1,0 +1,151 @@
+{
+  "favorite_ingredients": [],
+  "favorite_cocktails": [],
+  "conversation_history": [
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T15:59:50.414637"
+    },
+    {
+      "role": "user",
+      "content": "are you working?",
+      "timestamp": "2025-03-01T16:05:18.972671"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T16:11:56.481194"
+    },
+    {
+      "role": "assistant",
+      "content": "Here are the 5 cocktails containing lemon:\n\n- A1\n- Adam\n- Avalon\n- Applecar\n- Aviation\n\nLemons are commonly used in cocktails to add a refreshing citrusy flavor. If you need more information or recipes for any of these cocktails, feel free to ask!",
+      "timestamp": "2025-03-01T16:12:04.012872"
+    },
+    {
+      "role": "user",
+      "content": "I have whisky can you recommend a cocktails?",
+      "timestamp": "2025-03-01T16:17:03.721965"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T16:17:09.638888"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T16:21:35.277455"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T16:29:32.399556"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T16:41:28.918121"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T18:49:34.080309"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 non-alcoholic cocktails containing sugar?",
+      "timestamp": "2025-03-01T18:57:21.827106"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T18:57:26.918631"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T18:57:31.296386"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T18:57:32.357188"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T19:01:13.519988"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T19:01:16.670693"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T19:01:17.287776"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T19:01:18.125940"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T19:01:18.385913"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T19:01:18.486190"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T19:01:18.718531"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T19:01:20.374276"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T19:01:20.909651"
+    },
+    {
+      "role": "user",
+      "content": "What are the 5 cocktails containing lemon?",
+      "timestamp": "2025-03-01T19:34:51.936136"
+    },
+    {
+      "role": "assistant",
+      "content": "The 5 cocktails containing lemon from the list you provided are A1, Adam, Avalon, Applecar, and Aviation. Lemon is a popular ingredient in many cocktails for its bright and refreshing flavor. If you need recipes or more information on any of these drinks, feel free to ask!",
+      "timestamp": "2025-03-01T19:34:52.854606"
+    },
+    {
+      "role": "user",
+      "content": "I need a cocktail with the fireball frind",
+      "timestamp": "2025-03-01T19:35:07.181542"
+    },
+    {
+      "role": "user",
+      "content": "fireball",
+      "timestamp": "2025-03-01T19:35:15.471881"
+    },
+    {
+      "role": "user",
+      "content": "fireball",
+      "timestamp": "2025-03-01T19:35:16.734348"
+    },
+    {
+      "role": "assistant",
+      "content": "Ah, Fireball! That's a spicy and sweet cinnamon-flavored whiskey liqueur. It's quite popular and can be enjoyed on its own or as a shot. It also mixes well in cocktails for a fiery kick. If you're looking for a cocktail suggestion with Fireball, you might enjoy a \"Fireball Cider\" which combines Fireball with apple cider for a cozy and warming drink. Or if you prefer something simpler, you can just mix Fireball with ginger beer for a spicy and refreshing twist. Let me know if you'd like the recipes for those cocktails!",
+      "timestamp": "2025-03-01T19:35:16.734348"
+    }
+  ]
+}
