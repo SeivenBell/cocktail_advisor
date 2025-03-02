@@ -5,6 +5,7 @@ A Python-based chat application that integrates with a large language model (LLM
 ## Overview
 
 This project implements a cocktail recommendation system that:
+
 - Answers questions about cocktails and ingredients
 - Remembers user preferences (favorite ingredients/cocktails)
 - Provides personalized cocktail recommendations
@@ -36,17 +37,20 @@ This project implements a cocktail recommendation system that:
 ### Setup Instructions
 
 1. **Clone the repository**
+
    ```bash
-   git clone https://github.com/yourusername/cocktail-advisor-chat.git
+   git clone https://github.com/SeivenBell/cocktail_advisor.git
    cd cocktail-advisor-chat
    ```
 
 2. **Create a virtual environment**
+
    ```bash
    python -m venv venv
    ```
 
 3. **Activate the virtual environment**
+
    - On Windows:
      ```bash
      venv\Scripts\activate
@@ -57,24 +61,29 @@ This project implements a cocktail recommendation system that:
      ```
 
 4. **Install dependencies**
+
    ```bash
    pip install -r requirements.txt
    ```
 
 5. **Create a `.env` file in the project root with your OpenAI API key**
+
    ```
    OPENAI_API_KEY=your_openai_api_key_here
    ```
 
 6. **Run the application**
+
    ```bash
    # Navigate to the project root directory if you're not already there
    cd cocktail-advisor-chat
-   
+
    # Start the FastAPI server
    uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
    ```
+
    You should see output similar to:
+
    ```
    INFO:     Started server process [xxxx]
    INFO:     Waiting for application startup.
@@ -98,11 +107,13 @@ This project implements a cocktail recommendation system that:
 You can test the application with the following example queries:
 
 #### Knowledge Base Queries
+
 - "What are the 5 cocktails containing lemon?"
 - "What are the 5 non-alcoholic cocktails containing sugar?"
 - "What are my favourite ingredients?"
 
 #### Advisor Queries
+
 - "Recommend 5 cocktails that contain my favourite ingredients"
 - "Recommend a cocktail similar to 'Hot Creamy Bush'"
 - "I really like rum and pineapple juice. What can you recommend?"
@@ -137,6 +148,7 @@ cocktail_advisor/
 │   │   ├── chat.js               # JavaScript for chat interface
 ├── templates/
 │   ├── index.html                # Chat interface
+├── tests/
 ├── scripts/                       # Utility scripts (if needed)
 ├── requirements.txt              # Project dependencies
 ├── README.md                     # Project documentation
@@ -149,16 +161,19 @@ cocktail_advisor/
 The Cocktail Advisor Chat successfully implements all the required functionality:
 
 1. **Knowledge Base**:
+
    - Accurately retrieves cocktails based on ingredients (e.g., lemon, sugar)
    - Differentiates between alcoholic and non-alcoholic cocktails
    - Provides detailed information about cocktail recipes and preparation
 
 2. **User Memory**:
+
    - Detects and stores user preferences from natural language
    - Remembers favorite ingredients and cocktails across sessions
    - Provides preference information when asked
 
 3. **Recommendations**:
+
    - Generates personalized recommendations based on favorite ingredients
    - Finds similar cocktails based on ingredient composition
    - Provides relevant suggestions with explanations
@@ -171,32 +186,42 @@ The Cocktail Advisor Chat successfully implements all the required functionality
 ### Implementation Approach and Thought Process
 
 #### 1. Modular Design
+
 I chose a modular architecture to separate concerns and make the code maintainable:
+
 - Data processing is isolated from vector operations
 - User memory management is independent from the RAG system
 - The API layer is decoupled from the core functionality
 
 #### 2. RAG Implementation Strategy
+
 For the RAG system, I implemented a query-type detection approach to:
+
 - Identify the intent behind user queries (ingredient query, cocktail query, recommendation, etc.)
 - Route queries to specialized handlers
 - Retrieve only the most relevant information for each query type
 - Structure the context to optimize the LLM's understanding
 
 #### 3. Vector Database Choices
+
 I used FAISS for the vector database because:
+
 - It's lightweight and works well for local development
 - It provides efficient similarity search
 - It doesn't require external services, simplifying deployment
 
 #### 4. User Preference Detection
+
 For detecting user preferences, I implemented:
+
 - Pattern matching with regular expressions to identify expressions of preference
 - Context-aware storage to distinguish between ingredients and cocktails
 - A memory system that persists across sessions
 
 #### 5. Frontend Considerations
+
 The frontend was designed to be:
+
 - Lightweight (vanilla JavaScript, no heavy frameworks)
 - Responsive (works on different screen sizes)
 - Intuitive (clear interface with example questions)
